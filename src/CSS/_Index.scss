@@ -1,6 +1,7 @@
 @import "./App";
 @import "./home";
 @import "./Footer";
+@import "./Dashboard";
 
 
 body{
@@ -9,7 +10,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // background-color: #67AE5C;
+
 }  
 @media screen and (max-width: 780px){
   .Logo{
