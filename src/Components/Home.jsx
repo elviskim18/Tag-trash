@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 // import { IoLocationOutline } from 'react-icons/io';
 import { FiFlag } from 'react-icons/fi';
 import { FaPeopleCarry } from 'react-icons/fa';
+
+import TrashMap from './TrashMap';
+
 import Toon from "../images/toon.png"
 
 function Home() {
@@ -10,7 +13,7 @@ function Home() {
     <div className='Home'>
         <div className='top'>
             <div className='map'>
-                map
+                {/* <TrashMap /> */}
             </div>
             <div className='side-img'>
              <img src={Toon} alt='toon'className='toon'/>
