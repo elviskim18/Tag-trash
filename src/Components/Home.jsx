@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-// import { IoLocationOutline } from 'react-icons/io';
+import { MdLocationPin } from 'react-icons/md';
 import { FiFlag } from 'react-icons/fi';
 import { FaPeopleCarry } from 'react-icons/fa';
 
@@ -33,7 +33,7 @@ function Home() {
 
         <div className='stats'>
             <div className='location'>
-                <div className='con'> <FiFlag/> </div>
+                <div className='con'> <MdLocationPin/> </div>
                 <div className='num'> 50,000 +</div>
                 <div>Illegal dumps reported</div>
             </div>

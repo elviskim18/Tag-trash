@@ -1,0 +1,99 @@
+.Dispose{
+    height: 81.7vh;
+    .Title{
+        padding: 20px;
+        text-align: center;
+    }
+    .Tweet{
+        
+        height: 75vh;
+        display: flex;
+        // flex-direction: row;
+        justify-content: center;
+        .lEFT{
+            
+            width: 700px;
+            
+            margin-right: 150px;
+            height: 75vh;
+            overflow: hidden;
+            overflow-y: auto;
+            
+            .pOST{
+                height: 300px;
+                border: 1px solid aqua;
+                margin-bottom: 20px;
+                border-radius: 30px;
+                .uSERNAME{
+                    background-color: lawngreen;
+                    
+                    display: flex;
+                    flex-direction: row;
+                }
+                .dESCRIPTION{
+                    background-color: wheat;
+                    padding-left: 40px;
+                    
+                }
+                .iMAGE{
+                    // background-color: darkcyan;
+                    height: 200px;
+                    width: 200px;
+                    padding-left: 40px;
+                    .i-image{
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+                .cALL{
+                    background-color: lightcoral;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 2em;
+                    font-weight: lighter;
+                    .phone{
+                        margin-left: 60px;
+                    }
+                }
+            }
+           
+            
+        }
+        .rIGHT{
+            height: 75vh;
+            width: 500px;
+            .Search{
+                padding: 15px 70px;
+                border-radius: 10px;
+                border: 1px solid black;
+                background-color: #F7F9F9;
+                margin-left: 30px;
+            }
+            .nEW{
+                margin-top: 50px;
+                display: flex;
+                .dp{
+                    font-size: 2.5em;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 40px;
+                    .dISPOSE{
+                        padding: 10px;
+                        border: none;
+                    }
+                    button{
+                        padding: 10px;
+                        margin-top: 70px;
+                        color: white;
+                        background-color: #90D25C;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+}
