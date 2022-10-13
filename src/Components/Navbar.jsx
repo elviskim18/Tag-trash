@@ -1,10 +1,20 @@
 import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom'
 import { MdMenu } from 'react-icons/md';
 import { GrClose } from 'react-icons/gr';
 
 function Navbar() {
     const [isMobile, setIsMobile] = useState(false)
+    const navigate = useNavigate()
+
+    function handleLogout(){
+        navigate('/login')
+        localStorage.setItem("user", JSON.stringify([]));
+        localStorage.setItem("token", JSON.stringify(""));
+        localStorage.setItem("authenticated", JSON.stringify(false));
+    }
+    
   return (
     <div className="navbar">
        <h2 className='Logo'>TRASH TAG</h2>
@@ -24,7 +34,7 @@ function Navbar() {
                <li>ABOUT</li>
            </Link>
        </ul>
-       <button className='logout'>LOGOUT</button>
+       <button className='logout'onClick={handleLogout}>LOGOUT</button>
        <button className='menu'
        onClick={() => setIsMobile(!isMobile)}
        >

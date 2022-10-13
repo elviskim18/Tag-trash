@@ -3,14 +3,6 @@ import { Outlet,  } from 'react-router-dom';
 import logo from '../images/homepage.png';
 
 
-
-
-
-
-
-
-
-
 function Login() {
     
   return (
@@ -25,8 +17,6 @@ function Login() {
       </div>
 
       
-
-
     </div>
   );
 }
