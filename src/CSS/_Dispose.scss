@@ -20,33 +20,32 @@
             overflow-y: auto;
             
             .pOST{
-                height: 300px;
-                border: 1px solid aqua;
+                height: 350px;
+                border: 1px solid black;
                 margin-bottom: 20px;
                 border-radius: 30px;
+                display: flex;
+                flex-direction: column;
                 .uSERNAME{
-                    background-color: lawngreen;
-                    
+                    margin-left: 20px;
                     display: flex;
                     flex-direction: row;
+                    font-size: 1.2em;
                 }
                 .dESCRIPTION{
-                    background-color: wheat;
-                    padding-left: 40px;
+                    margin-left: 40px;
                     
                 }
                 .iMAGE{
-                    // background-color: darkcyan;
-                    height: 200px;
-                    width: 200px;
-                    padding-left: 40px;
+                    margin-left: 80px;
                     .i-image{
-                        height: 200px;
-                        width: 200px;
+                        border:  1px solid green;
+                        height: 140px;
+                        width: 400px;
                     }
                 }
                 .cALL{
-                    background-color: lightcoral;
+                    padding-top: 30px;
                     display: flex;
                     justify-content: center;
                     font-size: 2em;
