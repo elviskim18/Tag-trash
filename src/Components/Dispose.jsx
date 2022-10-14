@@ -5,10 +5,13 @@ import { CgProfile } from 'react-icons/cg';
 import { FiPhone } from 'react-icons/fi';
 import Test from "../images/test.png"
 import axios from '../API/axios';
+import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 
 function Dispose() {
 
   const QueryClient = useQueryClient()
+
+  const [visible ,setvisible] = useState(false)
   
 
 
@@ -74,18 +77,27 @@ function Dispose() {
           {posts?.map(post => (
             <div className="pOST" key={post?.id}>
             <div className='uSERNAME'>
-                <CgProfile />
+             <Avatar>
+                <AvatarImage
+                  src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?&w=128&h=128&dpr=2&q=80"
+                  alt="Colm Tuite"
+                  className="tESTING"
+                />
+                 <AvatarFallback delayMs={600}>CT</AvatarFallback>
+              </Avatar>
                 <p>{post?.user?.username}<span>time</span></p>
             </div>
             <div className='dESCRIPTION'>
-                <h5>{post?.description}</h5>
+                <p>{post?.description}</p>
             </div>
             <div className='iMAGE'>
              <img src={post?.image} alt='img'className='i-image'/>
             </div>
             <div className='cALL'>
                 <div><BsChat/></div>
-                <div className='phone'><FiPhone/></div>
+                <div className='phone'><FiPhone onClick={() => setvisible((visible) => !visible)}/></div>
+                <div className={visible ? "post-number" : "close-number"}>
+                  <p>{post.user.phone}</p></div>
             </div>
         </div>
 
@@ -99,7 +111,14 @@ function Dispose() {
           </form>
           <div className='nEW'>
               <div className='dp'>
-                  <CgProfile />
+              <Avatar>
+                <AvatarImage
+                  src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?&w=128&h=128&dpr=2&q=80"
+                  alt="Colm Tuite"
+                  className="tESTING"
+                />
+                 <AvatarFallback delayMs={600}>CT</AvatarFallback>
+              </Avatar>
                   <p>{account?.username}</p>
               </div>
               <form onSubmit={handlesubmit}>

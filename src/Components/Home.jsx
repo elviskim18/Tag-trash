@@ -3,7 +3,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { FiFlag } from 'react-icons/fi';
 import { FaPeopleCarry } from 'react-icons/fa';
 
-import TrashMap from './TrashMap';
+import Tmap from './Tmap';
 
 import Toon from "../images/toon.png"
 
@@ -13,7 +13,7 @@ function Home() {
     <div className='Home'>
         <div className='top'>
             <div className='map'>
-                {/* <TrashMap /> */}
+                {/* <Tmap /> */}
             </div>
             <div className='side-img'>
              <img src={Toon} alt='toon'className='toon'/>

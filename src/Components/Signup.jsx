@@ -14,6 +14,7 @@ function Signup() {
       name:"",
       username:"",
       avatar:"",
+      phone:"",
       password:""
     })
 
@@ -47,22 +48,28 @@ function Signup() {
       }
   return (
     <>
+         
+         <form onSubmit={handlesubmit} className="formtest" >
          <h2>CREATE ACCOUNT</h2>
          <h4>Enter your details blow</h4>
-         <form onSubmit={handlesubmit}>
+         <h5>OR</h5>    
+         <p  onClick={()=>navigate('/login')}>Login?</p>
             
             <input type="text" id="name" name="name" placeholder="Name" value={formdata?.name} onChange={handleChange}/>
             
             <input type="text" id="username" name="username" placeholder="Username" value={formdata?.username} onChange={handleChange}/>
 
             <input type="text" id="avatar" name="avatar" placeholder="Avatar" value={formdata?.avatar} onChange={handleChange}/>
+
+            <input type="number" id="phone" name="phone" placeholder="Phone Number" value={formdata?.phone} onChange={handleChange}/>
         
             <input type="password" id="password" name="password" placeholder="Password" value={formdata?.password} onChange={handleChange}/>
       
             <button className="submit">SIGNUP</button>
         </form> 
-        <h5>OR</h5>
-        <p onClick={()=>navigate('/login')}>Login?</p>
+       
+        
+       
         </>
   );
 }
